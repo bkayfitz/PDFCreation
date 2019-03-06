@@ -15,6 +15,8 @@
 		003EACCD222F4F6500810004 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EACCC222F4F6500810004 /* Palette.swift */; };
 		003EACCF222F53FB00810004 /* PDFTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003EACCE222F53FB00810004 /* PDFTemplate.xib */; };
 		003EACD1222F543E00810004 /* PDFTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EACD0222F543E00810004 /* PDFTemplate.swift */; };
+		003EACD5223006F100810004 /* PDFRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EACD4223006F100810004 /* PDFRender.swift */; };
+		003EACD7223007E000810004 /* PDFManualRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EACD6223007E000810004 /* PDFManualRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		003EACCC222F4F6500810004 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		003EACCE222F53FB00810004 /* PDFTemplate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFTemplate.xib; sourceTree = "<group>"; };
 		003EACD0222F543E00810004 /* PDFTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTemplate.swift; sourceTree = "<group>"; };
+		003EACD4223006F100810004 /* PDFRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRender.swift; sourceTree = "<group>"; };
+		003EACD6223007E000810004 /* PDFManualRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManualRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		003EACB8222F4F4A00810004 /* PDFGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				003EACD8223008F000810004 /* Rendering */,
 				003EACCB222F4F5400810004 /* Models */,
 				003EACB9222F4F4A00810004 /* AppDelegate.swift */,
 				003EACBB222F4F4A00810004 /* ViewController.swift */,
@@ -79,6 +84,15 @@
 				003EACD0222F543E00810004 /* PDFTemplate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		003EACD8223008F000810004 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				003EACD4223006F100810004 /* PDFRender.swift */,
+				003EACD6223007E000810004 /* PDFManualRenderer.swift */,
+			);
+			path = Rendering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 			files = (
 				003EACCD222F4F6500810004 /* Palette.swift in Sources */,
 				003EACBC222F4F4A00810004 /* ViewController.swift in Sources */,
+				003EACD5223006F100810004 /* PDFRender.swift in Sources */,
+				003EACD7223007E000810004 /* PDFManualRenderer.swift in Sources */,
 				003EACD1222F543E00810004 /* PDFTemplate.swift in Sources */,
 				003EACBA222F4F4A00810004 /* AppDelegate.swift in Sources */,
 			);
