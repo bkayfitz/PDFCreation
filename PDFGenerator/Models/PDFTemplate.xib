@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PDFTemplate" customModule="PDFGenerator" customModuleProvider="target">
+            <connections>
+                <outlet property="colour1" destination="Blk-yc-MKA" id="GQr-u7-U1Q"/>
+                <outlet property="colour2" destination="8EO-Ip-eM0" id="JeK-Ko-E0c"/>
+                <outlet property="colour3" destination="yGH-lr-o8b" id="6tn-jl-A4Q"/>
+                <outlet property="moreInfo" destination="Exp-hE-aw7" id="7F2-95-1dw"/>
+                <outlet property="stackView" destination="sw7-PH-Wbe" id="MA3-iz-6Yp"/>
+                <outlet property="titleLabel" destination="vtL-T7-FgB" id="M8p-3P-vCS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wdF-70-10a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sw7-PH-Wbe">
+                    <rect key="frame" x="10" y="20" width="355" height="398"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palette Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-T7-FgB">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="31.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G4x-Mb-VNR">
+                            <rect key="frame" x="0.0" y="41.5" width="355" height="128"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Blk-yc-MKA">
+                                    <rect key="frame" x="0.0" y="0.0" width="111.5" height="128"/>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <viewLayoutGuide key="safeArea" id="0jk-oX-IBk"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-Ip-eM0">
+                                    <rect key="frame" x="121.5" y="0.0" width="112" height="128"/>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <viewLayoutGuide key="safeArea" id="5lB-GK-4a8"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGH-lr-o8b">
+                                    <rect key="frame" x="243.5" y="0.0" width="111.5" height="128"/>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="ie3-hL-tax"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-hE-aw7">
+                            <rect key="frame" x="0.0" y="179.5" width="355" height="218.5"/>
+                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum in odio quis euismod. Mauris vel lorem tristique enim sagittis rhoncus. Maecenas eros velit, ultricies vel commodo sed, suscipit in sapien. Integer cursus eleifend tempus. Curabitur in egestas justo, a sollicitudin est. Nunc vulputate odio id lorem volutpat efficitur. Nulla vel mattis metus. Cras scelerisque id nisi et scelerisque. Donec volutpat lobortis condimentum.</string>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sw7-PH-Wbe" secondAttribute="trailing" constant="10" id="PLe-VO-ahN"/>
+                <constraint firstItem="sw7-PH-Wbe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="nKk-Hi-ZYm"/>
+                <constraint firstItem="sw7-PH-Wbe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tno-m6-jti"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
